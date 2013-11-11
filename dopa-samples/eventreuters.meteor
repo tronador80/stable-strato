@@ -1,0 +1,9 @@
+using pawel;
+
+$data = access_reuters_news name 'file:///dopa/dopa-samples/reuterstest';
+$sentences = split_sentences $data;
+$pos = tag_pos $sentences;
+$time = tag_time $pos engine "heideltime" input_type "news" language "english";
+$event = tag_event $time;
+
+write $event to 'file:///dopa/dopa-samples/eventCorpus.json';

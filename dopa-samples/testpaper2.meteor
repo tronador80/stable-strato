@@ -1,0 +1,5 @@
+$timeCorp = read from 'file:///dopa//dopa-samples/eventCorpus.json';
+
+$timeFiltered = filter $timeCorp where ($timeCorp.events[1].start=="1996-7-22 00,00,00");
+
+write $timeFiltered to 'file:///dopa//dopa-samples/eventfiltering.json';

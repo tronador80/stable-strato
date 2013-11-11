@@ -1,0 +1,6 @@
+$imrdata = imraccess table 'short';
+$imrdata = extractentities $imrdata for $imrdata.text.tweet into {
+	date : $imrdata.meta.timestamp,
+	entity : $imrdata.entity
+};
+write $imrdata to 'file:///dopa/dopa-samples/entity_result.json';

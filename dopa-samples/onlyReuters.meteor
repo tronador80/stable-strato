@@ -1,0 +1,5 @@
+using pawel;
+
+$data = access_reuters_news name 'file:///dopa/dopa-samples/alanConReuter';
+
+write $data to 'file:///dopa/dopa-samples/onlyReutersResult.json';

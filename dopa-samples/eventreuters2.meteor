@@ -1,0 +1,8 @@
+using pawel;
+
+$data = access_reuters_news name 'file:///dopa/dopa-samples/alanConReuter';
+$sentences = split_sentences $data;
+$pos = tag_pos $sentences;
+$time = tag_time $pos engine "heideltime" input_type "news" language "english";
+
+write $time to 'file:///dopa/dopa-samples/eventCorpusConReuter.json';

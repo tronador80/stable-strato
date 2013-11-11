@@ -1,0 +1,5 @@
+$timeCorp = read from 'file:///dopa//dopa-samples/testfile.json';
+
+$timeFiltered = filter $timeCorp where ($timeCorp.glossary.title=="example glossary");
+
+write $timeFiltered to 'file:///dopa//dopa-samples/ergebnistest.json';
