@@ -1,5 +1,5 @@
 using pawel;
 
-$data = access_reuters_news name 'file:///dopa/dopa-samples/alanConReuter';
+$data = access_reuters_news name 'file:///dopa/dopa-samples/reuterstest';
 
 write $data to 'file:///dopa/dopa-samples/onlyReutersResult.json';
