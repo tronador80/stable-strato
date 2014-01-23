@@ -47,7 +47,7 @@
     <!-- 		</dependency> -->
     
     <!-- OKKAM dependencies -->
-    	<dependency>
+    <!--	<dependency>
 			<groupId>fbem-ens</groupId>
 			<artifactId>fbem-ens</artifactId>
 			<version>1.0.7</version>
@@ -123,12 +123,12 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-    
+    -->
     
   </dependencies>
   
   <!-- OKKAM repositories -->
-  <repositories>
+ <!-- <repositories>
         <repository>
           <id>okkam-repo</id>
           <name>Okkam maven repository</name>
@@ -141,7 +141,7 @@
           </snapshots>
         </repository>
     </repositories>
-  
+  -->
   <reporting>
     <plugins>
 	</plugins>
