@@ -20,6 +20,9 @@ import java.net.InetSocketAddress;
 import java.util.HashSet;
 import java.util.List;
 
+import pawel.model.sopremo.io.LuceneIndexInputSplit;
+import pawel.model.sopremo.io.ReutersNewsInputSplit;
+
 import eu.stratosphere.nephele.deployment.ChannelDeploymentDescriptor;
 import eu.stratosphere.nephele.deployment.GateDeploymentDescriptor;
 import eu.stratosphere.nephele.deployment.TaskDeploymentDescriptor;
@@ -88,6 +91,10 @@ public class ServerTypeUtils {
 			types.add(Class.forName("eu.stratosphere.pact.common.io.TableInputSplit"));
 			types.add(byte[].class);
 			types.add(String[].class);
+			
+			types.add(ReutersNewsInputSplit.class);
+			types.add(LuceneIndexInputSplit.class);
+			
 		} catch (ClassNotFoundException e) {
 			System.out.println("Could not register class with Kryo: ");
 			e.printStackTrace(System.out);

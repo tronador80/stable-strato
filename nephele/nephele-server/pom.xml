@@ -20,6 +20,11 @@
       <artifactId>commons-cli</artifactId>
       <version>1.2</version>
     </dependency>
+	<dependency>
+      <groupId>eu.stratosphere</groupId>
+      <artifactId>pawel-model</artifactId>
+      <version>1.0b</version>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
