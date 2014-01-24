@@ -15,13 +15,13 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.okkam.match.EntityQueryObject;
-import org.okkam.match.parser.DefaultQueryParser;
-import org.okkam.modules.fbem.FbemConverter;
+//import org.okkam.match.EntityQueryObject;
+//import org.okkam.match.parser.DefaultQueryParser;
+//import org.okkam.modules.fbem.FbemConverter;
 
-import com.hstoermer.elinkage.data.GenericEntity;
-import com.hstoermer.elinkage.data.MatchingResult;
-import com.hstoermer.elinkage.fbem.algorithm.FbemImpl;
+//import com.hstoermer.elinkage.data.GenericEntity;
+//import com.hstoermer.elinkage.data.MatchingResult;
+//import com.hstoermer.elinkage.fbem.algorithm.FbemImpl;
 
 import eu.stratosphere.nephele.fs.Path;
 import eu.stratosphere.sopremo.aggregation.FixedTypeTransitiveAggregation;
@@ -918,20 +918,20 @@ public class CoreFunctions implements BuiltinProvider {
 		}
 		return new TextNode(time);
 	}
-
+/*
 	public static final OKKAMMATCHER OKKAMMATCHER = new OKKAMMATCHER();
 
 	@Name(noun = "numofmatchingentities")
 	public static class OKKAMMATCHER
 			extends
 			SopremoFunction3<IStreamNode<IJsonNode>, IStreamNode<IJsonNode>, INumericNode> {
-
+*/
 		/*
 		 * The following instances are declared transient, so they are ignored
 		 * when serialized with Kryo. We lazily create the instances when needed
 		 */
 		// FBemAlgorithm Matcher
-		private transient FbemImpl matcher = null;
+	/*	private transient FbemImpl matcher = null;
 
 		// instantiate object query-to-fbem data structure converter
 		private transient FbemConverter converter = null;
@@ -999,6 +999,6 @@ public class CoreFunctions implements BuiltinProvider {
 			}
 			return e1;
 		}
-	};
+	}; */
 
 }
