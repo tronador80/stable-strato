@@ -23,7 +23,7 @@
 	<dependency>
       <groupId>eu.stratosphere</groupId>
       <artifactId>pawel-model</artifactId>
-      <version>1.0b</version>
+      <version>1.0</version>
     </dependency>
   </dependencies>
   <build>
