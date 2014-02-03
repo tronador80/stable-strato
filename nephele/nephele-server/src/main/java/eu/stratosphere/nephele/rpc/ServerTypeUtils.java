@@ -22,6 +22,7 @@ import java.util.List;
 
 import pawel.model.sopremo.io.LuceneIndexInputSplit;
 import pawel.model.sopremo.io.ReutersNewsInputSplit;
+import pawel.model.sopremo.io.TextNewsInputSplit;
 
 import eu.stratosphere.nephele.deployment.ChannelDeploymentDescriptor;
 import eu.stratosphere.nephele.deployment.GateDeploymentDescriptor;
@@ -94,6 +95,7 @@ public class ServerTypeUtils {
 			
 			types.add(ReutersNewsInputSplit.class);
 			types.add(LuceneIndexInputSplit.class);
+                types.add(TextNewsInputSplit.class);
 			
 		} catch (ClassNotFoundException e) {
 			System.out.println("Could not register class with Kryo: ");
