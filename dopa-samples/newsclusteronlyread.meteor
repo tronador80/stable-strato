@@ -1,0 +1,5 @@
+using pawel;
+
+$data = text_input nametext 'file:///dopa/dopa-samples/newsClusterTest';
+
+write $data to 'file:///dopa/dopa-samples/eventClusterTest.json';

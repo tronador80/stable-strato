@@ -1,0 +1,6 @@
+using pawel;
+
+$data = text_input nametext 'file:///dopa/dopa-samples/newsCluster2';
+$sentences = split_sentences $data;
+
+write $sentences to 'file:///dopa/dopa-samples/eventClusterAll.json';
